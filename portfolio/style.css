@@ -16,6 +16,7 @@
       justify-content: space-between;
       position: fixed;
       top: 0;
+      z-index: 1;
       
     }
     .nav .logo{
@@ -23,7 +24,7 @@
       height: 175px;
       width: 135px;
       border-radius: 87px;
-      background: url(/image/logo.png);
+      background: url(/images/logo.png);
       background-position: center;
       background-size:cover;
       
@@ -102,19 +103,25 @@
     section.home .avatar{
       height: 340px;
       width: 400px;
-      background: url(/image/home.jpg);
+      background: url(/images/home.jpg);
       background-position: center;
       background-size: cover;
       border-radius: 20px;
     }
-    
-    .main {
-      
+    .icon img{
+      height: 40px;
+     position: relative;
+      top: 9.8rem;
       display: flex;
-      flex-wrap: wrap;
-      margin: 20px;
-      /* margin-top: 155px; */
+      /* justify-content: center; */
+      /* align-items: center; */
+      flex-direction: column;
+
     }
+    .icons {
+      gap: 22px;
+    }
+   
     /* .home{
 
       position: relative;
@@ -128,6 +135,147 @@
       color: #66BFBF;
     } */
 
+    
+
+.skills .continer {
+  padding-top: 100px;
+}
+.skills .section-heading {
+  color: #66BFBF;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.skills  p {
+  color: #000;
+  text-align: center;
+  margin-bottom: 6rem;
+  font-size: 1.5rem;
+
+}
+
+ .skills .card-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 6rem;
+  column-gap: 2rem; 
+  padding-bottom: 5rem;
+}
+.skills .card-wrapper .card {
+  border: 1px solid #66BFBF;
+  border-radius: 30px;
+  height: 450px;
+  width: 400px;
+  background: #fff;
+  padding: 3rem 2rem;
+  position: relative;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.1);
+  
+}
+ .card-wrapper img {
+  height: 100px;
+  position: absolute;
+  top: -3.5rem;
+  left: 50%;
+  transform: translateX(-50%); 
+  
+}
+.skills .card-wrapper .card:hover{
+  background: #66BFBF;
+}
+.skills .card-wrapper .card h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.skills .card-wrapper .card .im1{
+  position: absolute;
+  top: 7rem;
+  left: 25%;
+}
+
+.skills .card-wrapper .card .im2{
+  position: absolute;
+  top: 7rem;
+  left: 75%;
+}
+
+
+
+.skills .card-wrapper .card .im3{
+  position: absolute;
+  top: 20rem;
+  left: 25%;
+}
+.skills .card-wrapper .card .im4{
+  position: absolute;
+  top: 20rem;
+  left: 75%;
+}
+.skills .card-wrapper .card .im5{
+  position: absolute;
+  top: 13rem;
+  left: 49%;
+}
+.skills .card-wrapper .card .img1{
+  position: absolute;
+  top: 7rem;
+  left: 25%;
+  /* transition: all .2s ease-in-out; */
+}
+
+.skills .card-wrapper .card .img2{
+  position: absolute;
+  top: 7rem;
+  left: 75%;
+}
+
+.skills .card-wrapper .card .img3{
+  position: absolute;
+  top: 13rem;
+  left: 49%;
+}
+.skills .card-wrapper .card .img5{
+  position: absolute;
+  top: 20rem;
+  left: 75%;
+}
+
+.skills .card-wrapper .card .img4{
+  position: absolute;
+  top: 20rem;
+  left: 25%;
+}
+
+.skills .card-wrapper .card .img6{
+  position: absolute;
+  top: 15rem;
+  left: 49%;
+}
+
+
+.skills .card-wrapper .card .img7{
+  position: absolute;
+  top: 7rem;
+  left: 75%;
+}
+
+.skills .card-wrapper .card .img8{
+  position: absolute;
+  top: 7rem;
+  left: 25%;
+}
+
+    .main {
+          
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px;
+      /* margin-top: 155px; */
+    }
+
     .main .card {
       width: 267px;
       margin: 5px;
@@ -135,12 +283,14 @@
       border: 1px solid #66BFBF;
       box-shadow: 2px 2px 3px 3px rgba(0,0,0,0.1);
       background-color: #fff;
+      
     }
 
     .main .card img {
       /* width: 266px; */
       height: 265px;
       object-fit: cover;
+      transition: 0.5s;
       
     }
     .main .card img:hover{
@@ -200,7 +350,7 @@
       font-size: 45px;
     }
     section#contact p{
-      width: 500px;
+      width: 480px;
       color: #66BFBF;
       /* font-size: 45px; */
     }
@@ -230,7 +380,7 @@
       height: 30px;
       width: 250px;
       outline: none;
-      border: 1px solid #1c1c1c;
+      border: 1.2px solid #66BFBF;
       border-radius: 5px;
       padding: 0 5px;
     }
@@ -239,7 +389,7 @@
       width: 250px;
       resize: none;
       outline: none;
-      border: 1px solid #1c1c1c;
+      border: 1px solid #66BFBF;
       border-radius: 5px;
       padding: 10px 5px;
     }
@@ -249,5 +399,12 @@
       width: 120px;
       height: 30px;
       border-radius: 5px;
+      background-color:#66BFBF ;
+      border: 1.4px solid #66bfbf;
+      color: #fff;
+    } 
+
+    section#contact button:hover{
+      background-color: #fff;
+      color: #66BFBF;
     }
-    
